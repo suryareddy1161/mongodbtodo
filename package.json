@@ -1,0 +1,24 @@
+{
+  "name": "mongodbtodo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server":"nodemon server.js",
+    "mongodbclient":"npm start --prefix mgdbclient",
+    "dev":"concurrently \"npm run server\" \"npm run mgdbclient\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.18"
+  }
+}
